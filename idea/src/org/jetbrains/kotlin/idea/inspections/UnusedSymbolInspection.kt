@@ -221,7 +221,6 @@ class UnusedSymbolInspection : AbstractKotlinInspection() {
                 hasReferences(declaration, descriptor, restrictedScope) ||
                 hasOverrides(declaration, restrictedScope) ||
                 hasFakeOverrides(declaration, restrictedScope) ||
-                isPlatformImplementation(declaration) ||
                 hasPlatformImplementations(declaration, descriptor)
     }
 
