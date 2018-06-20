@@ -1519,6 +1519,16 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
             doTestWithCoroutinesPackageReplacement(fileName, "kotlin.coroutines");
         }
 
+        @TestMetadata("suspendJavaImplementationFromDifferentClass.kt")
+        public void testSuspendJavaImplementationFromDifferentClass() throws Exception {
+            runTest("compiler/testData/diagnostics/testsWithStdLib/coroutines/suspendJavaImplementationFromDifferentClass.kt");
+        }
+
+        @TestMetadata("suspendJavaOverrides.kt")
+        public void testSuspendJavaOverrides() throws Exception {
+            runTest("compiler/testData/diagnostics/testsWithStdLib/coroutines/suspendJavaOverrides.kt");
+        }
+
         @TestMetadata("suspendLambda.kt")
         public void testSuspendLambda() throws Exception {
             runTest("compiler/testData/diagnostics/testsWithStdLib/coroutines/suspendLambda.kt");
